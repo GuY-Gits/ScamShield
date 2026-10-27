@@ -1,0 +1,191 @@
+[
+  {
+    "id": "bank",
+    "title": "Bank SMS phishing",
+    "category": "Messages",
+    "symbol": "✉",
+    "summary": "An urgent bank alert asks you to verify your account through an unexpected link.",
+    "warningSigns": [
+      "Threats of immediate account suspension",
+      "An unfamiliar sender or link",
+      "Requests for passwords or OTPs"
+    ],
+    "prevention": [
+      "Open your bank’s official app yourself.",
+      "Call the number on your bank card or an independently verified official website."
+    ],
+    "nextSteps": [
+      "Stop replying and save the message.",
+      "If you shared banking information, contact your bank immediately through its official channels."
+    ],
+    "keywords": "sms kyc account suspended verification bank phishing otp"
+  },
+  {
+    "id": "upi",
+    "title": "UPI refund requests",
+    "category": "Payments",
+    "symbol": "₹",
+    "summary": "Someone claims that approving a payment request will send a refund to your account.",
+    "warningSigns": [
+      "A request to approve a debit to receive money",
+      "Pressure to enter your UPI PIN",
+      "An unexpected refund or unfamiliar payee"
+    ],
+    "prevention": [
+      "Read whether you are paying or receiving before approving anything.",
+      "Never enter a UPI PIN to receive an ordinary refund or incoming payment."
+    ],
+    "nextSteps": [
+      "Decline unfamiliar requests and contact the provider through its official app.",
+      "If money was lost, contact your bank and report financial cyber fraud promptly on 1930."
+    ],
+    "keywords": "collect refund pin payment request money receive"
+  },
+  {
+    "id": "jobs",
+    "title": "Fake job offers",
+    "category": "Jobs",
+    "symbol": "▣",
+    "summary": "A guaranteed job comes with a demand for an upfront registration or training fee.",
+    "warningSigns": [
+      "A job guaranteed without a credible hiring process",
+      "Pressure to pay immediately",
+      "An employer that cannot be independently verified"
+    ],
+    "prevention": [
+      "Find the employer’s official careers page independently.",
+      "Do not pay unsolicited recruiters to secure a promised job."
+    ],
+    "nextSteps": [
+      "Keep the offer and payment references if any.",
+      "Contact the real employer using official details and report suspected fraud through official channels."
+    ],
+    "keywords": "recruitment fee training registration employer work hiring"
+  },
+  {
+    "id": "qr",
+    "title": "QR cashback tricks",
+    "category": "Payments",
+    "symbol": "▦",
+    "summary": "A QR code is presented as the way to claim a reward, but it can start an outgoing payment.",
+    "warningSigns": [
+      "A reward that needs your PIN",
+      "An unfamiliar QR code or payee",
+      "A payment approval screen disguised as a claim step"
+    ],
+    "prevention": [
+      "Check the amount and recipient on the payment screen.",
+      "Do not scan an unfamiliar code or approve a debit to receive cashback."
+    ],
+    "nextSteps": [
+      "Cancel any unfamiliar payment prompt.",
+      "If you approved a payment, contact your payment provider and bank promptly."
+    ],
+    "keywords": "qr code cashback scan reward pin"
+  },
+  {
+    "id": "support",
+    "title": "Support impersonation",
+    "category": "Impersonation",
+    "symbol": "♧",
+    "summary": "Someone posing as customer support asks for a secret code or remote access.",
+    "warningSigns": [
+      "A request for your OTP, PIN or password",
+      "An unsolicited support call",
+      "Instructions to install remote-access software"
+    ],
+    "prevention": [
+      "Keep OTPs, PINs and passwords private.",
+      "Use the support option inside the official app instead of a number in an unexpected message."
+    ],
+    "nextSteps": [
+      "End the conversation.",
+      "If you shared secrets or access, contact the provider, secure the account and inform your bank if payments are involved."
+    ],
+    "keywords": "otp password customer care support remote access call"
+  },
+  {
+    "id": "prize",
+    "title": "Lottery & prize scams",
+    "category": "Messages",
+    "symbol": "☆",
+    "summary": "An unexpected win requires a processing charge before your supposed prize is released.",
+    "warningSigns": [
+      "A competition you never entered",
+      "Fees to unlock winnings",
+      "Pressure to keep the win secret or pay quickly"
+    ],
+    "prevention": [
+      "Do not send money for an unsolicited prize.",
+      "Verify the claim through the organisation’s independently located official website."
+    ],
+    "nextSteps": [
+      "Stop contact and preserve the message.",
+      "Report financial loss promptly to your bank and official reporting channels."
+    ],
+    "keywords": "lottery winner winnings prize processing fee reward"
+  },
+  {
+    "id": "delivery",
+    "title": "Fake delivery alerts",
+    "category": "Shopping / Delivery",
+    "symbol": "□",
+    "summary": "A failed-parcel message asks you to update your address or pay a small fee through a link.",
+    "warningSigns": [
+      "An unexpected delivery alert",
+      "A shortened or unfamiliar link",
+      "Requests for card details to release a parcel"
+    ],
+    "prevention": [
+      "Open the courier’s official app or website independently.",
+      "Check tracking against your own order history."
+    ],
+    "nextSteps": [
+      "Do not reply or enter details through the message.",
+      "Contact your bank if you shared payment details or approved an unfamiliar payment."
+    ],
+    "keywords": "parcel package courier address failed shopping delivery link"
+  },
+  {
+    "id": "malware",
+    "title": "Malware & fake downloads",
+    "category": "Malware",
+    "symbol": "⌘",
+    "summary": "Harmful software can be disguised as a parcel app, invoice or browser update.",
+    "warningSigns": [
+      "Unexpected apps or executable attachments",
+      "Instructions to bypass security warnings",
+      "Permissions unrelated to the stated purpose"
+    ],
+    "prevention": [
+      "Use trusted app stores and official vendor update controls.",
+      "Keep protections enabled and verify unexpected attachments independently."
+    ],
+    "nextSteps": [
+      "Stop interacting with the suspected file or app and seek trusted technical support.",
+      "Use a separate trusted device to secure important accounts if compromise is suspected; contact your bank if money is at risk."
+    ],
+    "keywords": "apk virus malware ransomware executable attachment zip fake update permissions"
+  },
+  {
+    "id": "adware",
+    "title": "Adware & scareware",
+    "category": "Adware",
+    "symbol": "▧",
+    "summary": "Intrusive advertising, misleading security popups and unwanted extensions can push unsafe installs.",
+    "warningSigns": [
+      "In-page alerts claiming a full device scan",
+      "Pressure to download a cleaner",
+      "Extensions requesting excessive access or changing search settings"
+    ],
+    "prevention": [
+      "Close suspicious tabs using browser controls rather than buttons in the popup.",
+      "Review extension permissions and install only tools whose source and access are justified."
+    ],
+    "nextSteps": [
+      "Review unwanted extensions and notification permissions in browser settings.",
+      "Use trusted security tools and qualified support if intrusive behaviour persists."
+    ],
+    "keywords": "adware scareware popup extension cleaner notifications browser ads coupons"
+  }
+]

@@ -1,0 +1,437 @@
+[
+  {
+    "id": "S01",
+    "category": "Messages",
+    "title": "An urgent message from your bank",
+    "channel": "SMS · DEMO BANK",
+    "fictionalMessage": "Your account will be suspended in 30 minutes. Complete KYC now at verify-bank.example. Do not delay.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check the sender against earlier bank messages, then use its KYC link.",
+        "rationale": "A familiar sender thread can be imitated. It does not authenticate a link."
+      },
+      {
+        "id": "b",
+        "text": "Open the bank app myself and check whether a KYC request is pending.",
+        "rationale": "The bank app you opened independently is a separate way to verify the claim."
+      },
+      {
+        "id": "c",
+        "text": "Call the support number on the message and ask them to confirm the request.",
+        "rationale": "The message can supply a number controlled by the same sender."
+      }
+    ],
+    "correctOptionId": "b",
+    "warningSigns": [
+      "An urgent suspension threat pressures you to act.",
+      "An unexpected link is presented as the only way to verify."
+    ],
+    "explanation": "Pause and check independently. Your bank’s official app or verified support channel lets you investigate without using an unexpected message link.",
+    "relatedScamId": "bank",
+    "track": "phishing",
+    "screen": "sms",
+    "sender": "DEMO BANK",
+    "difficulty": "Beginner",
+    "context": "You receive this unexpectedly while going about your day. Inspect the screen before deciding.",
+    "image": "assets/scenario-sms-v2.png"
+  },
+  {
+    "id": "S02",
+    "category": "Payments",
+    "title": "A refund that asks you to pay",
+    "channel": "UPI · FICTIONAL REQUEST",
+    "fictionalMessage": "Hello! Your refund of ₹1,499 is ready.\nApprove the payment request and enter your UPI PIN to receive your money.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare the request amount with my refund receipt before approving it.",
+        "rationale": "A matching amount does not change an outgoing request into an incoming refund."
+      },
+      {
+        "id": "b",
+        "text": "Ask the agent to confirm the refund reference before approving it.",
+        "rationale": "A reference supplied by the agent does not authenticate a payment request."
+      },
+      {
+        "id": "c",
+        "text": "Decline the request and check the refund status in the payment app.",
+        "rationale": "The app lets you check the refund without authorising the requested debit."
+      }
+    ],
+    "correctOptionId": "c",
+    "warningSigns": [
+      "A collect request asks you to authorise an outgoing payment.",
+      "The sender claims a PIN is needed to receive money."
+    ],
+    "explanation": "You do not need your UPI PIN to receive an ordinary incoming payment. Check what a request authorises and decline unexpected payment requests.",
+    "relatedScamId": "upi",
+    "track": "payments",
+    "screen": "chat",
+    "sender": "Refund Support",
+    "difficulty": "Beginner",
+    "context": "You receive this unexpectedly while going about your day. Inspect the screen before deciding.",
+    "image": "assets/scenario-chat-v2.png"
+  },
+  {
+    "id": "S03",
+    "category": "Jobs",
+    "title": "You got the job. Just pay first.",
+    "channel": "CHAT · FICTIONAL RECRUITER",
+    "fictionalMessage": "Congratulations! Your remote job is guaranteed. Pay ₹2,000 registration fees today to reserve your position. No interview needed.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Find the employer through a separate search and confirm the vacancy and fee.",
+        "rationale": "An independently found employer can verify both the vacancy and whether this recruiter is authorised. Do not pay while the claim is unverified."
+      },
+      {
+        "id": "b",
+        "text": "Check the recruiter’s profile history and ask for a written fee receipt.",
+        "rationale": "A profile and receipt can be fabricated; neither verifies the employer’s offer."
+      },
+      {
+        "id": "c",
+        "text": "Ask for an offer on company letterhead before paying the registration fee.",
+        "rationale": "Company letterhead can be copied. Verify through a separately found employer contact."
+      }
+    ],
+    "correctOptionId": "a",
+    "warningSigns": [
+      "Guaranteed employment without a credible selection process",
+      "An upfront fee and same-day deadline"
+    ],
+    "explanation": "A promised job and a deadline do not verify an employer. Find its real careers page and contact details yourself before sharing documents or considering an offer.",
+    "relatedScamId": "jobs",
+    "track": "impersonation",
+    "screen": "chat",
+    "sender": "Career Desk",
+    "difficulty": "Intermediate",
+    "context": "You receive this unexpectedly while going about your day. Inspect the screen before deciding."
+  },
+  {
+    "id": "S04",
+    "category": "Payments",
+    "title": "Scan to claim your cashback?",
+    "channel": "PAYMENT CHAT · FICTIONAL REWARD",
+    "fictionalMessage": "Your ₹500 cashback is waiting! Scan our QR code and enter your UPI PIN to collect it now.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare the recipient name with the reward provider before approving it.",
+        "rationale": "A familiar recipient label does not make an outgoing payment a cashback credit."
+      },
+      {
+        "id": "b",
+        "text": "Cancel the request and check the reward in the provider’s official app.",
+        "rationale": "Checking the official rewards area avoids authorising the unsolicited payment."
+      },
+      {
+        "id": "c",
+        "text": "Ask the sender for a reward reference before approving the request.",
+        "rationale": "A reference from the sender does not establish that cashback is due."
+      }
+    ],
+    "correctOptionId": "b",
+    "warningSigns": [
+      "The reward requires authorising a payment.",
+      "An unfamiliar QR code is used as a claim step."
+    ],
+    "explanation": "QR codes can open sites or initiate payments. Never approve an unfamiliar outgoing payment to receive a reward. This simulation contains no scannable payment code.",
+    "relatedScamId": "qr",
+    "track": "payments",
+    "screen": "payment",
+    "sender": "Cashback Desk",
+    "difficulty": "Intermediate",
+    "context": "You receive this unexpectedly while going about your day. Inspect the screen before deciding."
+  },
+  {
+    "id": "S05",
+    "category": "Impersonation",
+    "title": "Support wants your secret code",
+    "channel": "CHAT · FICTIONAL SUPPORT",
+    "fictionalMessage": "Hello, I am from account support. We detected an issue. Tell me the OTP you just received and I will fix it for you.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask the agent to confirm my recent activity before sharing the code.",
+        "rationale": "Recent activity can be known or guessed; it does not justify revealing an OTP."
+      },
+      {
+        "id": "b",
+        "text": "Check that the support profile uses the service’s name before sharing it.",
+        "rationale": "A service name or logo is easy to copy and does not authenticate the person."
+      },
+      {
+        "id": "c",
+        "text": "Keep the code private and open a support request from the app myself.",
+        "rationale": "Keeping the OTP private and starting your own support contact breaks the impersonation chain."
+      }
+    ],
+    "correctOptionId": "c",
+    "warningSigns": [
+      "A support agent asks for a secret authentication code.",
+      "The contact arrived unexpectedly."
+    ],
+    "explanation": "Never share an OTP, even with someone who knows your name or claims to be support. End the contact and open the official service yourself.",
+    "relatedScamId": "support",
+    "track": "impersonation",
+    "screen": "chat",
+    "sender": "Account Support",
+    "difficulty": "Beginner",
+    "context": "You receive this unexpectedly while going about your day. Inspect the screen before deciding."
+  },
+  {
+    "id": "S06",
+    "category": "Messages",
+    "title": "A prize you never entered to win",
+    "channel": "SMS · FICTIONAL PRIZE DESK",
+    "fictionalMessage": "Lucky winner! You have won ₹5,00,000. Pay a ₹999 processing fee today to release your prize. Keep your winning code private.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Find the organiser independently and check the prize claim before any payment.",
+        "rationale": "A separately found organiser can check the claim; an unsolicited prize and advance fee remain warning signs."
+      },
+      {
+        "id": "b",
+        "text": "Ask the sender for a winner certificate and a receipt for the charge.",
+        "rationale": "Certificates and receipts sent by the claimant are not independent evidence."
+      },
+      {
+        "id": "c",
+        "text": "Check the named organiser’s logo and registration number in the message.",
+        "rationale": "Copied logos and registration details can appear in a fabricated prize message."
+      }
+    ],
+    "correctOptionId": "a",
+    "warningSigns": [
+      "An unsolicited prize requires an advance fee.",
+      "Secrecy and urgency discourage independent checks."
+    ],
+    "explanation": "A large promised reward can make a small fee seem reasonable. Do not pay or share banking details based on an unsolicited winning message.",
+    "relatedScamId": "prize",
+    "track": "phishing",
+    "screen": "sms",
+    "sender": "Prize Desk",
+    "difficulty": "Beginner",
+    "context": "You receive this unexpectedly while going about your day. Inspect the screen before deciding."
+  },
+  {
+    "id": "S07",
+    "category": "Shopping / Delivery",
+    "title": "Your parcel could not be delivered",
+    "channel": "SMS · FICTIONAL COURIER",
+    "fictionalMessage": "Delivery failed. Update your address through the short link in this message within 2 hours or your parcel will be returned. A small redelivery fee may apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare the parcel number with my order, then use the address-update link.",
+        "rationale": "A matching parcel number does not authenticate the update link."
+      },
+      {
+        "id": "b",
+        "text": "Open my order history myself and check the courier’s delivery status there.",
+        "rationale": "Your own order history provides an independent route to delivery information."
+      },
+      {
+        "id": "c",
+        "text": "Call the delivery number supplied in the SMS to confirm the address issue.",
+        "rationale": "The SMS sender controls which number it gives you; use a known courier contact."
+      }
+    ],
+    "correctOptionId": "b",
+    "warningSigns": [
+      "An unexpected short link requests information.",
+      "A deadline and small fee make the request feel routine."
+    ],
+    "explanation": "Even when you expect a parcel, check tracking through your own order history or the courier’s official site. Do not use an unexpected message link.",
+    "relatedScamId": "delivery",
+    "track": "phishing",
+    "screen": "sms",
+    "sender": "Parcel Service",
+    "difficulty": "Intermediate",
+    "context": "You receive this unexpectedly while going about your day. Inspect the screen before deciding."
+  },
+  {
+    "id": "S08",
+    "track": "malware",
+    "category": "Malware",
+    "title": "A parcel tracker outside the app store",
+    "channel": "INSTALLER · FICTIONAL EXAMPLE",
+    "screen": "installer",
+    "sender": "Parcel Track Pro",
+    "fictionalMessage": "Install parcel-tracker.apk to view your delivery.\nAllow installs from this source and give the app access to SMS and accessibility services.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check the APK’s file name and publisher label before installing the tracker.",
+        "rationale": "A file name and publisher label can imitate a legitimate courier."
+      },
+      {
+        "id": "b",
+        "text": "Decline the APK and check tracking through the courier’s official channel.",
+        "rationale": "Official tracking avoids the unsolicited APK and its intrusive permissions."
+      },
+      {
+        "id": "c",
+        "text": "Scan the APK first, then allow the requested access if the scan is clear.",
+        "rationale": "A clean scan is not a guarantee of safety and does not justify SMS or accessibility access."
+      }
+    ],
+    "correctOptionId": "b",
+    "warningSigns": [
+      "An unexpected APK arrives through a message.",
+      "The app requests access unrelated to tracking."
+    ],
+    "explanation": "Do not install an unsolicited APK. SMS and accessibility access can expose sensitive activity or enable device control. Use a trusted route to the courier instead.",
+    "relatedScamId": "malware",
+    "difficulty": "Advanced",
+    "context": "This screen appears during an ordinary online task. What would you do next?"
+  },
+  {
+    "id": "S09",
+    "track": "malware",
+    "category": "Malware",
+    "title": "An invoice with a hidden extra step",
+    "channel": "EMAIL · FICTIONAL EXAMPLE",
+    "screen": "email",
+    "sender": "Billing Team",
+    "fictionalMessage": "Subject: Overdue invoice — action today\nAttachment: Invoice_Review.zip\nPlease extract the attachment, open the invoice app and disable security checks if it is blocked.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match the invoice amount to my records before opening the attached app.",
+        "rationale": "A familiar amount does not establish that an executable attachment is safe."
+      },
+      {
+        "id": "b",
+        "text": "Reply to the invoice email and ask the sender to confirm the attachment.",
+        "rationale": "A reply stays in the potentially compromised message channel."
+      },
+      {
+        "id": "c",
+        "text": "Contact the supplier using a known number to verify the invoice and file.",
+        "rationale": "A previously known supplier contact provides an independent verification route."
+      }
+    ],
+    "correctOptionId": "c",
+    "warningSigns": [
+      "An unexpected archive contains an executable rather than an ordinary invoice.",
+      "The sender asks you to disable security checks."
+    ],
+    "explanation": "Do not run an unexpected attachment or disable protection. Contact the supplier through contact details you already trust. A convincing email signature does not prove who sent the file.",
+    "relatedScamId": "malware",
+    "difficulty": "Intermediate",
+    "context": "This screen appears during an ordinary online task. What would you do next?"
+  },
+  {
+    "id": "S10",
+    "track": "malware",
+    "category": "Malware",
+    "title": "A browser update from a video page",
+    "channel": "BROWSER · FICTIONAL EXAMPLE",
+    "screen": "browser",
+    "sender": "Stream Demo",
+    "fictionalMessage": "Your browser is out of date.\nDownload Browser_Update.exe from this page to continue watching.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Close the page prompt and check updates through the browser’s own controls.",
+        "rationale": "The browser’s own update controls avoid trusting a download offered by a content page."
+      },
+      {
+        "id": "b",
+        "text": "Check the download page’s padlock before accepting its browser update.",
+        "rationale": "A padlock protects a connection; it does not prove the offered file is legitimate."
+      },
+      {
+        "id": "c",
+        "text": "Compare the installer’s name with my browser before running the update.",
+        "rationale": "An installer file can copy a browser’s name."
+      }
+    ],
+    "correctOptionId": "a",
+    "warningSigns": [
+      "A website offers a browser update as a download.",
+      "Access to content is used to pressure installation."
+    ],
+    "explanation": "Install browser updates through the browser’s built-in update controls or the vendor’s official route. A video page is not a trustworthy update source.",
+    "relatedScamId": "malware",
+    "difficulty": "Intermediate",
+    "context": "This screen appears during an ordinary online task. What would you do next?"
+  },
+  {
+    "id": "S11",
+    "track": "adware",
+    "category": "Adware",
+    "title": "Twelve threats. One suspicious popup.",
+    "channel": "BROWSER · FICTIONAL EXAMPLE",
+    "screen": "browser",
+    "sender": "Daily News Today",
+    "fictionalMessage": "Your device is at risk\n12 threats detected. Install the recommended cleaner now.\n[Download Cleaner] [Close]",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the alert open and use its support number to verify the threat count.",
+        "rationale": "The alert’s phone number is part of the unverified claim."
+      },
+      {
+        "id": "b",
+        "text": "Close the page and check my device through trusted security tools.",
+        "rationale": "A webpage cannot establish its own threat claim; check using trusted tools instead."
+      },
+      {
+        "id": "c",
+        "text": "Check whether the alert uses my device’s name before opening its cleaner.",
+        "rationale": "A device label is not proof that the webpage has scanned the device."
+      }
+    ],
+    "correctOptionId": "b",
+    "warningSigns": [
+      "A web page claims to have scanned your entire device.",
+      "An alarming threat count pushes an immediate download."
+    ],
+    "explanation": "This is a scareware tactic: an in-page alert is not a reliable device scan. Avoid interacting with the popup and close the tab or browser using its own controls. If concerned, use trusted security tools already installed.",
+    "relatedScamId": "adware",
+    "difficulty": "Beginner",
+    "context": "This screen appears during an ordinary online task. What would you do next?",
+    "image": "assets/scenario-browser-v2.png"
+  },
+  {
+    "id": "S12",
+    "track": "adware",
+    "category": "Adware",
+    "title": "A coupon extension wants every website",
+    "channel": "PERMISSIONS · FICTIONAL EXAMPLE",
+    "screen": "permissions",
+    "sender": "Super Savings Extension",
+    "fictionalMessage": "Add Super Savings?\nPermissions requested:\n• Read and change all your data on all websites\n• Change your search settings\n• Display notifications\nOffer: exclusive shopping coupons",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve the extension after checking its ratings and recent update date.",
+        "rationale": "Ratings and recent updates do not justify broad access to browsing data."
+      },
+      {
+        "id": "b",
+        "text": "Approve it after checking that the store identifies a named developer.",
+        "rationale": "An identified developer alone does not establish that these permissions are necessary."
+      },
+      {
+        "id": "c",
+        "text": "Cancel installation and assess the developer and requested access first.",
+        "rationale": "Assessing the publisher and access before installation avoids granting permissions first."
+      }
+    ],
+    "correctOptionId": "c",
+    "warningSigns": [
+      "A simple coupon tool requests broad website access.",
+      "Changes to search and notifications can create unwanted intrusion."
+    ],
+    "explanation": "Permissions are a reason to pause. Not every extension with broad access is malicious, but install only when its developer, purpose and access are justified. Unwanted extensions can inject ads or change browser behaviour.",
+    "relatedScamId": "adware",
+    "difficulty": "Intermediate",
+    "context": "This screen appears during an ordinary online task. What would you do next?"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "Q01",
+    "topic": "bank",
+    "question": "An SMS says your bank account will close today unless you verify through its link. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare its sender label with old bank alerts before using the link.",
+        "rationale": "Sender labels can be imitated; check through an independent channel."
+      },
+      {
+        "id": "b",
+        "text": "Open the bank app myself and check for the same request there.",
+        "rationale": "Opening the bank app independently avoids the message’s unverified link."
+      },
+      {
+        "id": "c",
+        "text": "Ask the number supplied in the message to confirm the deadline.",
+        "rationale": "A number supplied in the alert is not independent verification."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Check the claim independently. Urgency is a warning sign, and the message link could lead to an impersonation site."
+  },
+  {
+    "id": "Q02",
+    "topic": "upi",
+    "question": "A refund agent sends a UPI request. It asks for your PIN to approve a debit. Which check matters most?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve if the payment request shows the expected refund amount.",
+        "rationale": "A matching amount does not change the direction of the payment."
+      },
+      {
+        "id": "b",
+        "text": "Approve if the request includes the original transaction reference.",
+        "rationale": "A reference is not proof of a genuine incoming refund."
+      },
+      {
+        "id": "c",
+        "text": "Decline: a request to authorise a debit is not an incoming refund.",
+        "rationale": "Read the authorisation: an outgoing debit is different from receiving money."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A UPI PIN authorises payment actions. A refund claim does not make an outgoing debit safe."
+  },
+  {
+    "id": "Q03",
+    "topic": "jobs",
+    "question": "A recruiter guarantees a job if you pay a registration fee today. What is the safest response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contact the employer through independently found details before considering the request.",
+        "rationale": "Independent contact can verify the role and the recruiter’s authority."
+      },
+      {
+        "id": "b",
+        "text": "Request a formal offer and fee receipt from the recruiter before paying.",
+        "rationale": "A formal-looking offer and receipt can be fabricated."
+      },
+      {
+        "id": "c",
+        "text": "Check the recruiter’s profile and company logo before considering the fee.",
+        "rationale": "Profiles and logos are signals to investigate, not proof of an offer."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Guaranteed employment, an upfront fee and a short deadline are warning signs. Independently verify the organisation."
+  },
+  {
+    "id": "Q04",
+    "topic": "qr",
+    "question": "A stranger sends a QR code for cashback. The app asks you to approve a payment. What next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve after matching the recipient name with the cashback provider.",
+        "rationale": "The recipient label does not establish that the payment is a reward credit."
+      },
+      {
+        "id": "b",
+        "text": "Cancel and check whether the reward appears in the official app.",
+        "rationale": "Use the official rewards area without authorising the unsolicited payment."
+      },
+      {
+        "id": "c",
+        "text": "Confirm the cashback reference with the sender before approving.",
+        "rationale": "The sender can invent a reference."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Read what you are approving. Scanning a code can start an outgoing payment; it does not establish that a reward is genuine."
+  },
+  {
+    "id": "Q05",
+    "topic": "support",
+    "question": "A support caller asks for the OTP sent to your phone. Which response provides the strongest protection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Share it after the agent correctly confirms my recent account activity.",
+        "rationale": "Knowing activity details does not justify sharing a secret code."
+      },
+      {
+        "id": "b",
+        "text": "Share it after the caller gives me a support case reference.",
+        "rationale": "A caller can invent or obtain a case reference."
+      },
+      {
+        "id": "c",
+        "text": "Keep it private and contact support through the app myself.",
+        "rationale": "Keep the code secret and start your own verified support conversation."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An OTP is secret. Personal details and a convincing voice do not prove a caller’s identity."
+  },
+  {
+    "id": "Q06",
+    "topic": "prize",
+    "question": "You supposedly won a lottery you did not enter, but must pay a processing charge. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify with the organiser through independently found contact details.",
+        "rationale": "The verification route is separate from the unsolicited sender."
+      },
+      {
+        "id": "b",
+        "text": "Ask the sender for a prize certificate and processing-fee receipt.",
+        "rationale": "A certificate from the sender is not independent confirmation."
+      },
+      {
+        "id": "c",
+        "text": "Check the organiser details printed on the sender’s prize notice.",
+        "rationale": "Details printed by the claimant can be copied."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An unexpected prize tied to an advance fee is a warning sign. Do not let a large promised reward override independent checks."
+  },
+  {
+    "id": "Q07",
+    "topic": "delivery",
+    "question": "An unexpected delivery SMS asks you to update your address. Where should you check?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compare the parcel number, then follow the message’s update link.",
+        "rationale": "A matching parcel number does not authenticate the link."
+      },
+      {
+        "id": "b",
+        "text": "Open my order history and follow its official tracking route.",
+        "rationale": "Your own order history provides an independent route."
+      },
+      {
+        "id": "c",
+        "text": "Use the phone number in the SMS to confirm the address issue.",
+        "rationale": "The message can provide a number controlled by its sender."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Use a trusted route that you open yourself, even if you are expecting a parcel."
+  },
+  {
+    "id": "Q08",
+    "topic": "bank",
+    "question": "You have just lost money to suspected financial cyber fraud in India. Which action is appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask the sender to reverse it before contacting the bank or authorities.",
+        "rationale": "Waiting for the sender can delay an official report."
+      },
+      {
+        "id": "b",
+        "text": "Collect a complete evidence file before making any initial report.",
+        "rationale": "Preserve what you have, but do not wait for a perfect evidence file to report."
+      },
+      {
+        "id": "c",
+        "text": "Contact my bank and report promptly via 1930 or cybercrime.gov.in.",
+        "rationale": "Prompt official reporting and bank contact are appropriate; recovery is not guaranteed."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Report promptly through official channels and retain relevant transaction references. Reporting does not guarantee recovery."
+  },
+  {
+    "id": "Q09",
+    "topic": "support",
+    "question": "A caller asks you to install remote-access software to fix a payment problem. What is safest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "End the call and open a support request through the official app.",
+        "rationale": "An independently initiated support request avoids trusting the caller."
+      },
+      {
+        "id": "b",
+        "text": "Verify the caller’s case number, then allow a short remote session.",
+        "rationale": "A case number does not verify an unsolicited caller’s identity."
+      },
+      {
+        "id": "c",
+        "text": "Allow view-only access while keeping payment apps closed.",
+        "rationale": "Screen visibility can still expose sensitive information."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Remote access can expose accounts and payment apps. Watching the screen does not make access safe."
+  },
+  {
+    "id": "Q10",
+    "topic": "bank",
+    "question": "Which evidence would be most useful when reporting suspected fraud?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep a summary of the incident and remove the original messages.",
+        "rationale": "A summary helps, but deleting originals removes useful context."
+      },
+      {
+        "id": "b",
+        "text": "Keep original messages, dates and transaction references for reporting.",
+        "rationale": "Original records and references support official reporting."
+      },
+      {
+        "id": "c",
+        "text": "Keep screenshots of the sender’s profile and their refund promise.",
+        "rationale": "Profile screenshots alone omit transaction details and message context."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Preserve relevant evidence for your bank and official reporting channels. Avoid posting sensitive evidence publicly."
+  }
+]

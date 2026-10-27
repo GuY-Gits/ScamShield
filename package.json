@@ -1,0 +1,1 @@
+{"name":"scamshield","version":"1.0.0","private":true,"type":"module","description":"Static cybersecurity awareness learning website","scripts":{"start":"node serve.mjs","test":"node tests/content.test.mjs"}}
